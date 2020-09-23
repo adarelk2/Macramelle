@@ -1,0 +1,407 @@
+.overlay {
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(241, 239, 239, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  .overlay-content {
+    position: relative;
+    top: 5%;
+    width: 100%;
+    text-align: left;
+    margin-top: 30px;
+  }
+  .overlay a {
+      text-align: left;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 1em;
+    color:rgb(38, 38, 38);
+    display: block;
+    transition: 0.3s;
+    border-bottom: 1px solid gray;
+  }
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  .overlay .closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 2.2em;
+    border:0;
+  }
+  @media screen and (min-width: 969px) {
+    .noneForDesktop{
+      display: none;
+    }
+  }
+@media screen and (max-width: 964px) {
+    .topMenu 
+    {
+      display: block;
+    }
+    .topMenu p
+    {
+      margin: 0;
+    }
+    .searchDiv .inputSearch
+    {
+      margin: auto;
+      width:60%;
+    }
+    .searchDiv .inputSearch button
+    {
+      left:88%;
+    }
+    header .logo
+    {
+        height: 60px;
+        width: 30%;
+    }
+    header .desktop
+    {
+      
+      width:40%;
+    }
+    .strip
+    {
+     background-image: url(../images/intro.jpg);
+   }
+    .container
+    {
+      width:90%;
+    }
+    header .container .mobile
+    {
+        display: none;
+    }
+    header nav
+    {
+      width:100%;text-align: center;
+    }
+
+    .strip .box p 
+    {
+      width:80%;
+    }
+    .strip .box h1
+    {
+      font-size: 1.8em;
+    } 
+    main
+    {
+        margin-top: 100px;
+    }
+    header .container .desktop
+    {
+      display: block;
+    }
+    main .noneForMobile
+    {
+      display: none;
+    }
+    .row .items,.row .Category
+    {
+        width:100%;
+        margin-bottom: 36px;
+    }
+    .row .box5,.row .box4,.row .boxItem
+      {
+        width:48%;
+        min-height: 40px;
+      }
+      .Category .box
+      {
+          width: 24%;
+      }
+      .Category .box input, .Category .box select
+      {
+          width: 80%;
+      }
+      .Category .box button
+      {
+          width:100%;
+          padding:4px;
+      }
+      .row .box4
+      {
+        margin-bottom: 0;
+      }
+      .row .box4 h3
+      {
+        margin-bottom: 12px;
+        margin-top:0;
+      }
+      .row .borderRight
+      {
+        border-right:1px solid #fff;
+      }
+      .row .borderDesktop
+      {
+        border-right:0;
+      }
+      
+      .row .titleRow
+      {
+        width:100%;
+        min-height: 50px;
+      }
+      .Cuppon .box
+      {
+        width:90%;
+      }
+      .Cuppon button
+      {
+        width:35%;
+        font-size: 0.7em;
+      }
+      .Cuppon input
+      {
+        width:60%;
+      }
+      footer .row .box5
+      {
+          text-align: center;
+      }
+
+    }
+    @media screen and (max-width: 768px) {
+        .topMenu 
+        {
+          display: block;
+        }
+        .topMenu p
+        {
+          margin: 0;
+        }
+        .searchDiv .inputSearch
+        {
+          margin: auto;
+          width:60%;
+        }
+        .searchDiv .inputSearch button
+        {
+          left:88%;
+        }
+        header .logo
+        {
+            height: 60px;
+            width: 60%;
+        }
+        header .container .desktop
+        {
+          display: none;
+        }
+        .strip
+        {
+         background-image: url(../images/intro.jpg);
+       }
+        .container
+        {
+          width:90%;
+        }
+        header .container .mobile
+        {
+            display: block;
+        }
+
+        header nav
+        {
+          width:100%;text-align: center;
+        }
+    
+        .strip .box p 
+        {
+          width:80%;
+        }
+        .strip .box h1
+        {
+          font-size: 1.8em;
+        } 
+        main
+        {
+            margin-top: 70px;
+        }
+        main #image-zoom
+        {
+          
+          min-height: 400px;
+        }
+        .row .box5,.row .box4,.row .boxItem
+          {
+            width:48%;
+            min-height: 40px;
+          }
+          .row .items,.row .Category
+          {
+              width:100%;
+              margin-bottom: 36px;
+          }
+          .row .box4
+          {
+            margin-bottom: 0;
+          }
+          .row .box4 h3
+          {
+            margin-bottom: 12px;
+            margin-top:0;
+          }
+          .row .borderRight
+          {
+            border-right:1px solid #fff;
+          }
+          .row .borderDesktop
+          {
+            border-right:0;
+          }
+          .row .col-1,.row .col-2,.row .col-3,.row .col-4
+          {
+            width:48%;
+            margin-bottom: 36px;
+          }
+          .row .titleRow
+          {
+            width:100%;
+            min-height: 50px;
+          }
+          .Cuppon .box
+          {
+            width:90%;
+          }
+          .Cuppon button
+          {
+            width:35%;
+            font-size: 0.7em;
+          }
+          .Cuppon input
+          {
+            width:60%;
+          }
+
+          footer .row .box5
+          {
+              text-align: center;
+          }    
+          .row .noneForMobile
+          {
+              display: none;
+          }
+    
+    }
+  @media screen and (max-width: 576px) {
+    .topMenu 
+    {
+      display: block;
+    }
+    .topMenu p
+    {
+      margin: 0;
+    }
+    .searchDiv .inputSearch
+    {
+      width:70%;
+    }
+    .searchDiv .inputSearch button
+    {
+      left:88%;
+    }
+    header .logo
+    {
+        height: 60px;
+        width: 60%;
+    }
+   .strip
+   {
+    background-image: url(../images/intro.jpg);
+  }
+    .strip .box p
+    {
+      width:100%;
+    }
+
+    .strip .box h1
+    {
+      font-size: 1.4em;
+    }
+    .container
+    {
+      width:90%;
+    }
+    main
+    {
+        margin-top: 100px;
+    }
+    .row .box5, .row .boxItem
+    {
+      width:100%;
+      min-height: 40px;
+      margin: auto;
+      margin-bottom: 12px;
+    }
+    .row .col-1,.row .col-2,.row .col-3,.row .col-4
+    {
+      width:100%;
+      margin-bottom: 36px;
+    }
+    .row .items,.row .Category
+    {
+        width:100%;
+        margin-bottom: 36px;
+    }
+    .row .box4
+    {
+      width:48%;
+      min-height: 40px;
+      margin: auto;
+    }
+    .row .borderDesktop
+    {
+      border-right:0;
+    }
+    .row .box4 h3
+    {
+      font-size: 0.6em;
+      margin-bottom: 12px;
+    }
+    .row .borderRight
+    {
+      border-right:1px solid gray;
+    }
+    .row .titleRow
+    {
+      width:100%;
+      min-height: 50px;
+    }
+    .boxIdItem
+    {
+      text-align: center;
+    }
+    .row .box4 img
+    {
+      height: 300px;
+    }
+ 
+    .row .box2
+    {
+      width:100%;
+    }
+    .Cuppon h2 
+    {
+        font-size: 1.6em;
+    }
+    footer .row .box5
+    {
+        text-align: center;
+    }
+    .row .noneForMobile
+    {
+        display: none;
+    }
+    
+  }
