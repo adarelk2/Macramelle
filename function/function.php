@@ -89,17 +89,17 @@ function getCartListMobile()
     for($i=1; $i<=$checkCart; $i++)
     {
         $itemClass = new item($mysqli);
-        $items[$i] = $itemClass->setItem($_SESSION['items'][$i]);
-        if($items[$i]->getPrice() > 0)
+        $items = $itemClass->setItem($_SESSION['items'][$i]);
+        if($items->getPrice() > 0)
         {
             echo "<div class='col-5'>
-                <h3 class='m-0' style='text-align:center; font-family: lightFont;'>",$items[$i]->getTitle(),"</h3>
+                <h3 class='m-0' style='text-align:center; font-family: lightFont;'>",$items->getTitle(),"</h3>
                 </div>
                 <div class='boxItem col-5'>
-                <img src=",$items[$i]->getBackground()," alt=''>  
+                <img src=",$items->getBackground()," alt=''>  
                 </div>
                 <div class='col-5'>
-                <h3 class='m-0 mb-1'>",$items[$i]->getPrice(),"$</h3>
+                <h3 class='m-0 mb-1'>",$items->getPrice(),"$</h3>
                 </div>
                 <div class='col-5 mb-3'>
                 <button class='Btn Dark' onClick=deleteFromCart(",$i,")>DELETE</button></div>";
